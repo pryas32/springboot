@@ -1,0 +1,52 @@
+Index: src/main/java/net/engineeringdigest/journalApp/service/JournalEntryService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/net/engineeringdigest/journalApp/service/JournalEntryService.java b/src/main/java/net/engineeringdigest/journalApp/service/JournalEntryService.java
+--- a/src/main/java/net/engineeringdigest/journalApp/service/JournalEntryService.java	
++++ b/src/main/java/net/engineeringdigest/journalApp/service/JournalEntryService.java	(date 1725302262516)
+@@ -4,9 +4,10 @@
+ 
+ import net.engineeringdigest.journalApp.repository.JournalEntryRepository;
+ import org.springframework.beans.factory.annotation.Autowired;
+-import org.springframework.stereotype.Component;
+ 
+-@Component
++import org.springframework.stereotype.Service;
++
++@Service
+ public class JournalEntryService {
+ 
+ 
+Index: src/main/java/net/engineeringdigest/journalApp/repository/JournalEntryRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/net/engineeringdigest/journalApp/repository/JournalEntryRepository.java b/src/main/java/net/engineeringdigest/journalApp/repository/JournalEntryRepository.java
+--- a/src/main/java/net/engineeringdigest/journalApp/repository/JournalEntryRepository.java	
++++ b/src/main/java/net/engineeringdigest/journalApp/repository/JournalEntryRepository.java	(date 1725303590746)
+@@ -10,5 +10,3 @@
+ public interface JournalEntryRepository extends MongoRepository<JournalEntry,String>  {
+ }
+ 
+-
+-
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	(date 1725303667347)
+@@ -35,6 +35,8 @@
+ 			<artifactId>spring-boot-starter-web</artifactId>
+ 		</dependency>
+ 
++
++
+ 		<dependency>
+ 			<groupId>org.springframework.boot</groupId>
+ 			<artifactId>spring-boot-starter-test</artifactId>
